@@ -1,0 +1,893 @@
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EstedadFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Estedad/Estedad-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gandom';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Gandom/Gandom.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSharp';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANSharp/IRANSharp-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANSharp';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANSharp/IRANSharp-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANSharp';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANSharp/IRANSharp-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBlack.woff2') format('woff2');
+    font-weight: 950;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Heavy.woff2') format('woff2');
+    font-weight: 960;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBlack.woff2') format('woff2');
+    font-weight: 950;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanXFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Heavy.woff2') format('woff2');
+    font-weight: 960;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kara';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Kara/Kara-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kara';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Kara/Kara-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mikhak';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Mikhak/Mikhak-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nahid';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Nahid/Nahid.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parastoo';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Parastoo/Parastoo-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Parastoo';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Parastoo/Parastoo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Sahel/Sahel-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sahel';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Sahel/Sahel-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sahel';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Sahel/Sahel-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sahel';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Sahel/Sahel-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sahel';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Sahel/Sahel-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samim';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Samim/Samim-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Samim/Samim-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Samim/Samim-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Tanha';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Tanha/Tanha.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TanhaFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Tanha/Tanha.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shabnam';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Shabnam';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Shabnam';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Shabnam';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Shabnam';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ShabnamFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ShabnamFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ShabnamFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ShabnamFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ShabnamFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/Shabnam/Shabnam-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatn';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirMatnFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* EXTRAFONT */
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBlack.woff2') format('woff2');
+    font-weight: 950;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Heavy.woff2') format('woff2');
+    font-weight: 960;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-ExtraBlack.woff2') format('woff2');
+    font-weight: 950;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/IRANYekanX/IRANYekanX-Heavy.woff2') format('woff2');
+    font-weight: 960;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'VazirFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'VazirFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirFN';
+    src: url('/wp-content/plugins/persian-elementor/assets/css/font/VazirMatn/Vazirmatn-black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
