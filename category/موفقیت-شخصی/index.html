@@ -4,7 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
-	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+	content: "\f160";
+	color: #02CA02;
+	top: 3px;
+}
+#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
+	transform: rotate(45deg);
+}</style>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
 	<!-- This site is optimized with the Yoast SEO plugin v23.9 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -33,7 +41,7 @@
 	            "image": {
 	                "@id": "/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/#primaryimage"
 	            },
-	            "thumbnailUrl": "/wp-content/uploads/2024/11/ezgif-5-62cc6c2a98.png",
+	            "thumbnailUrl": "/wp-content/uploads/2024/11/ezgif-2-6f5d3e7c3b.png",
 	            "breadcrumb": {
 	                "@id": "/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/#breadcrumb"
 	            },
@@ -43,11 +51,11 @@
 	            "@type": "ImageObject",
 	            "inLanguage": "fa-IR",
 	            "@id": "/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/#primaryimage",
-	            "url": "/wp-content/uploads/2024/11/ezgif-5-62cc6c2a98.png",
-	            "contentUrl": "/wp-content/uploads/2024/11/ezgif-5-62cc6c2a98.png",
-	            "width": 979,
-	            "height": 653,
-	            "caption": "قدرت مثبت اندیشی"
+	            "url": "/wp-content/uploads/2024/11/ezgif-2-6f5d3e7c3b.png",
+	            "contentUrl": "/wp-content/uploads/2024/11/ezgif-2-6f5d3e7c3b.png",
+	            "width": 2000,
+	            "height": 1052,
+	            "caption": "چگونه انضباط خود را برای موفقیت توسعه دهیم"
 	        },
 	        {
 	            "@type": "BreadcrumbList",
@@ -178,10 +186,244 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 flexibility(document.documentElement);
 </script>
 <![endif]-->
+<script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/">
 <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/categories/2">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.7.1">
+<script id="wpcp_disable_selection" type="text/javascript">var image_save_msg='You are not allowed to save images!';
+	var no_menu_msg='Context Menu disabled!';
+	var smessage = "Content is protected !!";
+
+function disableEnterKey(e)
+{
+	var elemtype = e.target.tagName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
+	{
+		elemtype = 'TEXT';
+	}
+	
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+    //if (key != 17) alert(key);
+     if (elemtype!= 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43 || key == 73))
+     {
+		if(wccp_free_iscontenteditable(e)) return true;
+		show_wpcp_message('You are not allowed to copy content or view source');
+		return false;
+     }else
+     	return true;
+     }
+}
+
+
+/*For contenteditable tags*/
+function wccp_free_iscontenteditable(e)
+{
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+  	
+	var target = e.target || e.srcElement;
+
+	var elemtype = e.target.nodeName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	var iscontenteditable = "false";
+		
+	if(typeof target.getAttribute!="undefined" ) iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
+	
+	var iscontenteditable2 = false;
+	
+	if(typeof target.isContentEditable!="undefined" ) iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
+
+	if(target.parentElement.isContentEditable) iscontenteditable2 = true;
+	
+	if (iscontenteditable == "true" || iscontenteditable2 == true)
+	{
+		if(typeof target.style!="undefined" ) target.style.cursor = "text";
+		
+		return true;
+	}
+}
+
+////////////////////////////////////
+function disable_copy(e)
+{	
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+	
+	var elemtype = e.target.tagName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
+	{
+		elemtype = 'TEXT';
+	}
+	
+	if(wccp_free_iscontenteditable(e)) return true;
+	
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT")
+	{
+		if (smessage !== "" && e.detail == 2)
+			show_wpcp_message(smessage);
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+
+//////////////////////////////////////////
+function disable_copy_ie()
+{
+	var e = e || window.event;
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if(wccp_free_iscontenteditable(e)) return true;
+	if (elemtype == "IMG") {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    //For IE This code will work
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    
+    //For Firefox This code will work
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    
+    //All other  (ie: Opera) This code will work
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+//Calling the JS function directly just after body load
+window.onload = function(){disableSelection(document.body);};
+
+//////////////////special for safari Start////////////////
+var onlongtouch;
+var timer;
+var touchduration = 1000; //length of time we want the user to touch before we do something
+
+var elemtype = "";
+function touchstart(e) {
+	var e = e || window.event;
+  // also there is no e.target property in IE.
+  // instead IE uses window.event.srcElement
+  	var target = e.target || e.srcElement;
+	
+	elemtype = window.event.srcElement.nodeName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if(!wccp_pro_is_passive()) e.preventDefault();
+	if (!timer) {
+		timer = setTimeout(onlongtouch, touchduration);
+	}
+}
+
+function touchend() {
+    //stops short touches from firing the event
+    if (timer) {
+        clearTimeout(timer);
+        timer = null;
+    }
+	onlongtouch();
+}
+
+onlongtouch = function(e) { //this will clear the current selection if anything selected
+	
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "EMBED" && elemtype != "OPTION")	
+	{
+		if (window.getSelection) {
+			if (window.getSelection().empty) {  // Chrome
+			window.getSelection().empty();
+			} else if (window.getSelection().removeAllRanges) {  // Firefox
+			window.getSelection().removeAllRanges();
+			}
+		} else if (document.selection) {  // IE?
+			document.selection.empty();
+		}
+		return false;
+	}
+};
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    window.addEventListener("touchstart", touchstart, false);
+    window.addEventListener("touchend", touchend, false);
+});
+
+function wccp_pro_is_passive() {
+
+  var cold = false,
+  hike = function() {};
+
+  try {
+	  const object1 = {};
+  var aid = Object.defineProperty(object1, 'passive', {
+  get() {cold = true}
+  });
+  window.addEventListener('test', hike, aid);
+  window.removeEventListener('test', hike, aid);
+  } catch (e) {}
+
+  return cold;
+}
+/*special for safari End*/</script>
+<script id="wpcp_disable_Right_Click" type="text/javascript">document.ondragstart = function() { return false;}
+	function nocontext(e) {
+	   return false;
+	}
+	document.oncontextmenu = nocontext;</script>
+<style>.unselectable
+{
+-moz-user-select:none;
+-webkit-user-select:none;
+cursor: default;
+}
+html
+{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}</style>
+<script id="wpcp_css_disable_selection" type="text/javascript">var e = document.getElementsByTagName('body')[0];
+if(e)
+{
+	e.setAttribute('unselectable',"on");
+}</script>
 <meta name="generator" content="Elementor 3.25.10; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -205,7 +447,7 @@ flexibility(document.documentElement);
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2024/11/logo.png">
 </head>
 
-<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="rtl archive category category-2 wp-custom-logo ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.8.7 ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-9">
+<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="rtl archive category category-2 wp-custom-logo unselectable ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.8.7 ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-9">
 
 <a class="skip-link screen-reader-text" href="#content" title="Skip to content">
 		Skip to content</a>
@@ -290,22 +532,94 @@ flexibility(document.documentElement);
 	
 					<main id="main" class="site-main">
 				<div class="ast-row">
+<article class="post-400 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-3 ast-grid-common-col ast-full-width ast-article-post remove-featured-img-padding" id="post-400" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+		<div class="ast-post-format- blog-layout-4 ast-article-inner">
+	<div class="post-content ast-grid-common-col">
+		<div class="ast-blog-featured-section post-thumb ast-blog-single-element"><div class="post-thumb-img-content post-thumb"><a href="/1403/09/10/%da%86%da%af%d9%88%d9%86%d9%87-%d8%a7%d9%86%d8%b6%d8%a8%d8%a7%d8%b7-%d8%ae%d9%88%d8%af-%d8%b1%d8%a7-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%aa%d9%88%d8%b3%d8%b9%d9%87-%d8%af/"><img width="1024" height="539" src="/wp-content/uploads/2024/11/ezgif-2-6f5d3e7c3b.png" class="attachment-large size-large wp-post-image" alt="چگونه انضباط خود را برای موفقیت توسعه دهیم" itemprop="image" decoding="async"></a></div></div>
+<span class="ast-blog-single-element ast-taxonomy-container cat-links default"><a href="/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/" rel="category tag">موفقیت شخصی</a></span><h2 class="entry-title ast-blog-single-element" itemprop="headline"><a href="/1403/09/10/%da%86%da%af%d9%88%d9%86%d9%87-%d8%a7%d9%86%d8%b6%d8%a8%d8%a7%d8%b7-%d8%ae%d9%88%d8%af-%d8%b1%d8%a7-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%aa%d9%88%d8%b3%d8%b9%d9%87-%d8%af/" rel="bookmark">چگونه انضباط خود را برای موفقیت توسعه دهیم</a></h2>		<header class="entry-header ast-blog-single-element ast-blog-meta-container">
+			<div class="entry-meta">
+<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by حسن خدابخشی" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
+				<span class="author-name" itemprop="name">
+				حسن خدابخشی			</span>
+			</a>
+		</span>
+
+		 / <span class="posted-on"><span class="published" itemprop="datePublished"> آذر ۱۰, ۱۴۰۳ </span></span>
+</div>		</header><!-- .entry-header -->
+					<div class="ast-excerpt-container ast-blog-single-element">
+				<p>موفقیت با تسلط بر خود آغاز می‌شود و هسته اصلی این تسلط، نظم و انضباط است. آیا می‌دانستید که موفق‌ترین [&hellip;]</p>
+			</div>
+				<div class="entry-content clear" itemprop="text">
+					</div>
+<!-- .entry-content .clear -->
+	</div>
+<!-- .post-content -->
+</div> <!-- .blog-layout-4 -->
+	</article><!-- #post-## -->
+<article class="post-387 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-3 ast-grid-common-col ast-full-width ast-article-post remove-featured-img-padding" id="post-387" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+		<div class="ast-post-format- blog-layout-4 ast-article-inner">
+	<div class="post-content ast-grid-common-col">
+		<div class="ast-blog-featured-section post-thumb ast-blog-single-element"><div class="post-thumb-img-content post-thumb"><a href="/1403/09/10/15-%d8%b1%d8%a7%d9%87-%d8%b3%d8%a7%d8%af%d9%87-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%af%d8%b1-%d8%b2%d9%86%d8%af%da%af%db%8c/"><img width="1024" height="768" src="/wp-content/uploads/2024/11/ezgif-5-3c36116858.png" class="attachment-large size-large wp-post-image" alt="۱۵ راه ساده برای موفقیت در زندگی" itemprop="image" decoding="async"></a></div></div>
+<span class="ast-blog-single-element ast-taxonomy-container cat-links default"><a href="/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/" rel="category tag">موفقیت شخصی</a></span><h2 class="entry-title ast-blog-single-element" itemprop="headline"><a href="/1403/09/10/15-%d8%b1%d8%a7%d9%87-%d8%b3%d8%a7%d8%af%d9%87-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%af%d8%b1-%d8%b2%d9%86%d8%af%da%af%db%8c/" rel="bookmark">۱۵ راه ساده برای موفقیت در زندگی</a></h2>		<header class="entry-header ast-blog-single-element ast-blog-meta-container">
+			<div class="entry-meta">
+<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by حسن خدابخشی" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
+				<span class="author-name" itemprop="name">
+				حسن خدابخشی			</span>
+			</a>
+		</span>
+
+		 / <span class="posted-on"><span class="published" itemprop="datePublished"> آذر ۱۰, ۱۴۰۳ </span></span>
+</div>		</header><!-- .entry-header -->
+					<div class="ast-excerpt-container ast-blog-single-element">
+				<p>باور به توانایی‌های خود و درک اینکه پتانسیل انجام کارهای خارق‌العاده در درون شما وجود دارد، اولین قدم در مسیر</p>
+			</div>
+				<div class="entry-content clear" itemprop="text">
+					</div>
+<!-- .entry-content .clear -->
+	</div>
+<!-- .post-content -->
+</div> <!-- .blog-layout-4 -->
+	</article><!-- #post-## -->
+<article class="post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-2 ast-grid-common-col ast-full-width ast-article-post remove-featured-img-padding" id="post-374" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+		<div class="ast-post-format- blog-layout-4 ast-article-inner">
+	<div class="post-content ast-grid-common-col">
+		<div class="ast-blog-featured-section post-thumb ast-blog-single-element"><div class="post-thumb-img-content post-thumb"><a href="/1403/09/10/%d8%aa%d9%86%d8%b8%db%8c%d9%85-%d9%87%d8%af%d9%81-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d9%88-%d8%aa%d9%88%d8%b3%d8%b9%d9%87-%d8%b9%d8%a7%d8%af%d8%a7%d8%aa-%d9%87%d9%88%d8%b4/"><img width="1024" height="683" src="/wp-content/uploads/2024/11/ezgif-3-a85d0215b9.png" class="attachment-large size-large wp-post-image" alt="تنظیم هدف برای موفقیت و توسعه عادات هوشمند" itemprop="image" decoding="async"></a></div></div>
+<span class="ast-blog-single-element ast-taxonomy-container cat-links default"><a href="/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/" rel="category tag">موفقیت شخصی</a></span><h2 class="entry-title ast-blog-single-element" itemprop="headline"><a href="/1403/09/10/%d8%aa%d9%86%d8%b8%db%8c%d9%85-%d9%87%d8%af%d9%81-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d9%88-%d8%aa%d9%88%d8%b3%d8%b9%d9%87-%d8%b9%d8%a7%d8%af%d8%a7%d8%aa-%d9%87%d9%88%d8%b4/" rel="bookmark">تنظیم هدف برای موفقیت و توسعه عادات هوشمند</a></h2>		<header class="entry-header ast-blog-single-element ast-blog-meta-container">
+			<div class="entry-meta">
+<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by حسن خدابخشی" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
+				<span class="author-name" itemprop="name">
+				حسن خدابخشی			</span>
+			</a>
+		</span>
+
+		 / <span class="posted-on"><span class="published" itemprop="datePublished"> آذر ۱۰, ۱۴۰۳ </span></span>
+</div>		</header><!-- .entry-header -->
+					<div class="ast-excerpt-container ast-blog-single-element">
+				<p>اهمیت هدف‌گذاری در زندگی حرفه‌ای یکی از متداول‌ترین سؤالاتی که از من می‌شود این است که «چرا هدف‌گذاری مهم است؟»</p>
+			</div>
+				<div class="entry-content clear" itemprop="text">
+					</div>
+<!-- .entry-content .clear -->
+	</div>
+<!-- .post-content -->
+</div> <!-- .blog-layout-4 -->
+	</article><!-- #post-## -->
 <article class="post-208 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-3 ast-grid-common-col ast-full-width ast-article-post remove-featured-img-padding" id="post-208" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 		<div class="ast-post-format- blog-layout-4 ast-article-inner">
 	<div class="post-content ast-grid-common-col">
 		<div class="ast-blog-featured-section post-thumb ast-blog-single-element"><div class="post-thumb-img-content post-thumb"><a href="/1403/09/07/%d9%82%d8%af%d8%b1%d8%aa-%d9%85%d8%ab%d8%a8%d8%aa-%d8%a7%d9%86%d8%af%db%8c%d8%b4%db%8c/"><img width="979" height="653" src="/wp-content/uploads/2024/11/ezgif-5-62cc6c2a98.png" class="attachment-large size-large wp-post-image" alt="قدرت مثبت اندیشی" itemprop="image" decoding="async"></a></div></div>
 <span class="ast-blog-single-element ast-taxonomy-container cat-links default"><a href="/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/" rel="category tag">موفقیت شخصی</a></span><h2 class="entry-title ast-blog-single-element" itemprop="headline"><a href="/1403/09/07/%d9%82%d8%af%d8%b1%d8%aa-%d9%85%d8%ab%d8%a8%d8%aa-%d8%a7%d9%86%d8%af%db%8c%d8%b4%db%8c/" rel="bookmark">قدرت مثبت اندیشی</a></h2>		<header class="entry-header ast-blog-single-element ast-blog-meta-container">
 			<div class="entry-meta">
-<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by hassan" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
+<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by حسن خدابخشی" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
 				<span class="author-name" itemprop="name">
-				hassan			</span>
+				حسن خدابخشی			</span>
 			</a>
 		</span>
 
 		 / <span class="posted-on"><span class="published" itemprop="datePublished"> آذر ۷, ۱۴۰۳ </span></span>
 </div>		</header><!-- .entry-header -->
 					<div class="ast-excerpt-container ast-blog-single-element">
-				<p>قدرت تفکر مثبت واقعاً قابل توجه است و می‌تواند تأثیر عمیقی بر زندگی فرد بگذارد. این ایده که نگرش ذهنی [&hellip;]</p>
+				<p>قدرت تفکر مثبت واقعاً قابل توجه است و می‌تواند تأثیر عمیقی بر زندگی فرد بگذارد. این ایده که نگرش ذهنی</p>
 			</div>
 				<div class="entry-content clear" itemprop="text">
 					</div>
@@ -320,9 +634,9 @@ flexibility(document.documentElement);
 		<div class="ast-blog-featured-section post-thumb ast-blog-single-element"><div class="post-thumb-img-content post-thumb"><a href="/1403/09/07/%da%86%da%af%d9%88%d9%86%d9%87-%d8%a8%d8%a7-%d9%88%d8%b6%d9%88%d8%ad-%d9%88-%d8%aa%d8%a7%d8%ab%db%8c%d8%b1-%d8%a7%d8%b1%d8%aa%d8%a8%d8%a7%d8%b7-%d8%a8%d8%b1%d9%82%d8%b1%d8%a7%d8%b1-%da%a9%d9%86%db%8c/"><img width="1024" height="683" src="/wp-content/uploads/2024/11/ezgif-5-02d72f1029.png" class="attachment-large size-large wp-post-image" alt="" itemprop="image" decoding="async"></a></div></div>
 <span class="ast-blog-single-element ast-taxonomy-container cat-links default"><a href="/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/" rel="category tag">موفقیت شخصی</a></span><h2 class="entry-title ast-blog-single-element" itemprop="headline"><a href="/1403/09/07/%da%86%da%af%d9%88%d9%86%d9%87-%d8%a8%d8%a7-%d9%88%d8%b6%d9%88%d8%ad-%d9%88-%d8%aa%d8%a7%d8%ab%db%8c%d8%b1-%d8%a7%d8%b1%d8%aa%d8%a8%d8%a7%d8%b7-%d8%a8%d8%b1%d9%82%d8%b1%d8%a7%d8%b1-%da%a9%d9%86%db%8c/" rel="bookmark">چگونه با وضوح و تأثیر ارتباط برقرار کنیم</a></h2>		<header class="entry-header ast-blog-single-element ast-blog-meta-container">
 			<div class="entry-meta">
-<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by hassan" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
+<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by حسن خدابخشی" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
 				<span class="author-name" itemprop="name">
-				hassan			</span>
+				حسن خدابخشی			</span>
 			</a>
 		</span>
 
@@ -344,9 +658,9 @@ flexibility(document.documentElement);
 		<div class="ast-blog-featured-section post-thumb ast-blog-single-element"><div class="post-thumb-img-content post-thumb"><a href="/1403/09/07/%da%86%da%af%d9%88%d9%86%d9%87-%db%8c%da%a9-%d8%b2%d9%86%d8%af%da%af%db%8c-%d8%b4%d8%a7%d8%af-%d8%af%d8%a7%d8%b4%d8%aa%d9%87-%d8%a8%d8%a7%d8%b4%db%8c%d9%85/"><img width="1024" height="661" src="/wp-content/uploads/2024/11/ezgif-5-92b1778717.png" class="attachment-large size-large wp-post-image" alt="چگونه یک زندگی شاد داشته باشیم" itemprop="image" decoding="async"></a></div></div>
 <span class="ast-blog-single-element ast-taxonomy-container cat-links default"><a href="/category/%d9%85%d9%88%d9%81%d9%82%db%8c%d8%aa-%d8%b4%d8%ae%d8%b5%db%8c/" rel="category tag">موفقیت شخصی</a></span><h2 class="entry-title ast-blog-single-element" itemprop="headline"><a href="/1403/09/07/%da%86%da%af%d9%88%d9%86%d9%87-%db%8c%da%a9-%d8%b2%d9%86%d8%af%da%af%db%8c-%d8%b4%d8%a7%d8%af-%d8%af%d8%a7%d8%b4%d8%aa%d9%87-%d8%a8%d8%a7%d8%b4%db%8c%d9%85/" rel="bookmark">چگونه یک زندگی شاد داشته باشیم</a></h2>		<header class="entry-header ast-blog-single-element ast-blog-meta-container">
 			<div class="entry-meta">
-<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by hassan" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
+<span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by حسن خدابخشی" href="/author/hassan/" rel="author" class="url fn n" itemprop="url">
 				<span class="author-name" itemprop="name">
-				hassan			</span>
+				حسن خدابخشی			</span>
 			</a>
 		</span>
 
@@ -390,6 +704,70 @@ flexibility(document.documentElement);
 	</footer><!-- #colophon -->
 	</div>
 <!-- #page -->
+	<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme">
+<span>error: </span>Content is protected !!</div>
+	<script>
+	var timeout_result;
+	function show_wpcp_message(smessage)
+	{
+		if (smessage !== "")
+			{
+			var smessage_text = '<span>Alert: <\/span>'+smessage;
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, 3000);
+			}
+	}
+	function hide_message()
+	{
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+	</script>
+		<style>@media print {
+	body * {display: none !important;}
+		body:after {
+		content: "You are not allowed to print preview this page, Thank you"; }
+	}</style>
+		<style type="text/css">#wpcp-error-message {
+	    direction: ltr;
+	    text-align: center;
+	    transition: opacity 900ms ease 0s;
+	    z-index: 99999999;
+	}
+	.hideme {
+    	opacity:0;
+    	visibility: hidden;
+	}
+	.showme {
+    	opacity:1;
+    	visibility: visible;
+	}
+	.msgmsg-box-wpcp {
+		border:1px solid #f5aca6;
+		border-radius: 10px;
+		color: #555;
+		font-family: Tahoma;
+		font-size: 11px;
+		margin: 10px;
+		padding: 10px 36px;
+		position: fixed;
+		width: 255px;
+		top: 50%;
+  		left: 50%;
+  		margin-top: -10px;
+  		margin-left: -130px;
+  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+	}
+	.msgmsg-box-wpcp span {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+		.warning-wpcp {
+		background:#ffecec url('/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+	}</style>
 
 <div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both">
 	<span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
